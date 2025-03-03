@@ -1,0 +1,5 @@
+template-file-path: cloudformation_template.yaml
+parameters:
+  KeyName: MyKeyPair
+  EnvironmentName: ASG-LabWeek3
+tags: {}
