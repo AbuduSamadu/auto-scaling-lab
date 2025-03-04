@@ -515,11 +515,11 @@ Resources:
     Type: AWS::CloudWatch::Alarm
     Properties:
       AlarmName: !Sub "${EnvironmentName}-CPUAlarmHigh"
-      AlarmDescription: Scale out if CPU > 50% for 1 consecutive period of 30 seconds
+      AlarmDescription: Scale out if CPU > 50% for 1 consecutive period of 10 seconds
       MetricName: CPUUtilization
       Namespace: AWS/EC2
       Statistic: Average
-      Period: 30
+      Period: 10
       EvaluationPeriods: 1
       Threshold: 50
       ComparisonOperator: GreaterThanThreshold
